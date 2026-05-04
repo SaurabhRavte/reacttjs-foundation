@@ -43,7 +43,7 @@ export default function Meals() {
               Encryption: Standard_A
             </p>
           </div>
-          <div className="absolute bottom-0 left-0 w-24 h-[2px] bg-red-600"></div>
+          <div className="absolute bottom-0 left-0 w-24 h-0.5 bg-red-600"></div>
         </div>
 
         {/* Grid System */}
@@ -56,7 +56,7 @@ export default function Meals() {
                 onClick={() => setSelected(meal)}
                 className="group cursor-pointer flex flex-col"
               >
-                <div className="relative aspect-[3/4] overflow-hidden bg-zinc-950 border border-zinc-900 p-2 transition-all duration-500 group-hover:border-red-900/50">
+                <div className="relative aspect-3/4 overflow-hidden bg-zinc-950 border border-zinc-900 p-2 transition-all duration-500 group-hover:border-red-900/50">
                   {/* Decorative corner */}
                   <div className="absolute top-0 right-0 w-8 h-8 border-t border-r border-transparent group-hover:border-red-600 transition-all duration-500"></div>
 
@@ -78,7 +78,7 @@ export default function Meals() {
                 <h3 className="mt-6 text-zinc-300 text-[11px] font-medium tracking-[0.2em] uppercase group-hover:text-red-600 transition-colors duration-300">
                   {meal.strMeal}
                 </h3>
-                <div className="w-0 group-hover:w-full h-[1px] bg-red-900/30 mt-2 transition-all duration-500"></div>
+                <div className="w-0 group-hover:w-full h-px bg-red-900/30 mt-2 transition-all duration-500"></div>
               </div>
             );
           })}

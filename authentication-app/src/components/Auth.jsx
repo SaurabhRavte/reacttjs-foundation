@@ -126,7 +126,7 @@ export default function Auth() {
               Authentication<span className="text-red-600">.</span>
             </h1>
           </div>
-          <div className="absolute -left-8 top-0 w-1 h-20 bg-gradient-to-b from-red-600 to-transparent"></div>
+          <div className="absolute -left-8 top-0 w-1 h-20 bg-linear-to-b from-red-600 to-transparent"></div>
         </header>
 
         {/* Messaging Area */}
@@ -145,7 +145,7 @@ export default function Auth() {
           <div className="space-y-12 animate-in fade-in zoom-in-95 duration-700">
             <div className="flex flex-col items-center gap-8">
               <div className="relative group">
-                <div className="absolute inset-[-8px] border border-zinc-800 rotate-45 group-hover:rotate-90 transition-all duration-1000"></div>
+                <div className="absolute -inset-2 border border-zinc-800 rotate-45 group-hover:rotate-90 transition-all duration-1000"></div>
                 <div className="w-20 h-20 bg-zinc-900 flex items-center justify-center text-3xl font-extralight text-zinc-100 border border-zinc-800">
                   {(user.username || "?")[0].toUpperCase()}
                 </div>
@@ -167,7 +167,7 @@ export default function Auth() {
                 className="group relative border border-zinc-800 text-zinc-500 text-[10px] py-4 uppercase tracking-[0.4em] overflow-hidden hover:text-white transition-all"
               >
                 <span className="relative z-10">Re-Sync Registry</span>
-                <div className="absolute inset-0 bg-zinc-900 translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-500"></div>
+                <div className="absolute inset-0 bg-zinc-900 -translate-x-full group-hover:translate-x-0 transition-transform duration-500"></div>
               </button>
 
               <button
@@ -192,7 +192,7 @@ export default function Auth() {
                 >
                   {t}
                   {tab === t && (
-                    <div className="absolute bottom-[-1px] left-0 w-full h-[2px] bg-red-600"></div>
+                    <div className="absolute -bottom-px left-0 w-full h-0.5 bg-red-600"></div>
                   )}
                 </button>
               ))}

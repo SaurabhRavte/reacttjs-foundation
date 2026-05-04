@@ -34,7 +34,7 @@ export default function Videos() {
             </p>
           </div>
 
-          <div className="absolute bottom-0 left-0 w-32 h-[2px] bg-red-600"></div>
+          <div className="absolute bottom-0 left-0 w-32 h-0.5 bg-red-600"></div>
         </header>
 
         {/* Video Grid */}
@@ -55,7 +55,7 @@ export default function Videos() {
                       {/* Play Icon Overlay */}
                       <div className="absolute inset-0 z-10 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 bg-black/40 backdrop-blur-[2px]">
                         <div className="w-12 h-12 border border-white flex items-center justify-center rotate-45 group-hover:rotate-0 transition-transform duration-700">
-                          <div className="w-0 h-0 border-t-[6px] border-t-transparent border-l-[10px] border-l-white border-b-[6px] border-b-transparent ml-1"></div>
+                          <div className="w-0 h-0 border-t-[6px] border-t-transparent border-l-10 border-l-white border-b-[6px] border-b-transparent ml-1"></div>
                         </div>
                       </div>
 
@@ -83,7 +83,7 @@ export default function Videos() {
                       </h3>
 
                       <div className="flex items-center gap-3">
-                        <div className="w-4 h-[1px] bg-red-900"></div>
+                        <div className="w-4 h-px bg-red-900"></div>
                         <p className="text-zinc-600 text-[9px] tracking-[0.3em] uppercase group-hover:text-zinc-400 transition-colors">
                           {s.channelTitle}
                         </p>
@@ -99,7 +99,7 @@ export default function Videos() {
           <span className="[writing-mode:vertical-lr] text-[8px] tracking-[0.8em] text-zinc-700 uppercase">
             Archives // 04-2026
           </span>
-          <div className="w-px h-16 bg-gradient-to-b from-zinc-800 to-transparent"></div>
+          <div className="w-px h-16 bg-linear-to-b from-zinc-800 to-transparent"></div>
         </div>
       </div>
     </div>

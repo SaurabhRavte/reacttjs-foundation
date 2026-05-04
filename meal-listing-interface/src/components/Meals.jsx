@@ -87,7 +87,7 @@ export default function Meals() {
         {/* Modal Overlay */}
         {selected && (
           <div
-            className="fixed inset-0 z-[100] bg-black/95 backdrop-blur-md flex items-center justify-center p-4 md:p-12 animate-in fade-in duration-500"
+            className="fixed inset-0 z-100 bg-black/95 backdrop-blur-md flex items-center justify-center p-4 md:p-12 animate-in fade-in duration-500"
             onClick={() => setSelected(null)}
           >
             <div
@@ -107,7 +107,7 @@ export default function Meals() {
                   src={selected.strMealThumb}
                   className="w-full h-full object-cover grayscale opacity-80"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent md:bg-gradient-to-r"></div>
+                <div className="absolute inset-0 bg-linear-to-t from-zinc-950 via-transparent to-transparent md:bg-linear-to-r"></div>
               </div>
 
               {/* Modal Content */}

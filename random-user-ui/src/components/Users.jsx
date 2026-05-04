@@ -33,7 +33,7 @@ export default function Users() {
           </div>
 
           {/* Decorative Red Line */}
-          <div className="absolute bottom-0 left-0 w-24 h-[2px] bg-red-600"></div>
+          <div className="absolute bottom-0 left-0 w-24 h-0.5 bg-red-600"></div>
         </div>
 
         {/* Grid System */}
@@ -58,10 +58,10 @@ export default function Users() {
                     {/* Geometric Avatar Frame */}
                     <div className="relative mb-12">
                       {/* Rotating Diamond Border */}
-                      <div className="absolute inset-[-12px] border border-zinc-800 rotate-45 group-hover:rotate-90 group-hover:border-red-600 transition-all duration-1000 ease-in-out"></div>
+                      <div className="absolute -inset-3 border border-zinc-800 rotate-45 group-hover:rotate-90 group-hover:border-red-600 transition-all duration-1000 ease-in-out"></div>
 
                       {/* Vertical Accent Line */}
-                      <div className="absolute -top-6 left-1/2 -translate-x-1/2 w-[1px] h-4 bg-zinc-800 group-hover:bg-red-600 group-hover:h-8 transition-all duration-700"></div>
+                      <div className="absolute -top-6 left-1/2 -translate-x-1/2 w-px h-4 bg-zinc-800 group-hover:bg-red-600 group-hover:h-8 transition-all duration-700"></div>
 
                       <div className="relative w-24 h-24 overflow-hidden bg-zinc-950 p-1">
                         <img

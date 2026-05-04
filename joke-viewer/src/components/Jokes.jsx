@@ -24,7 +24,7 @@ export default function Jokes() {
           <h1 className="text-5xl font-extralight tracking-tighter text-zinc-100 uppercase italic">
             Jokes<span className="text-red-600">.</span>
           </h1>
-          <div className="mt-8 w-px h-16 bg-gradient-to-b from-red-600 to-transparent"></div>
+          <div className="mt-8 w-px h-16 bg-linear-to-b from-red-600 to-transparent"></div>
         </header>
 
         {/* Content Section */}
@@ -47,7 +47,7 @@ export default function Jokes() {
                   <span className="text-[10px] font-bold text-zinc-800 group-hover:text-red-600 transition-colors duration-500 tracking-tighter">
                     {String(i + 1).padStart(2, "0")}
                   </span>
-                  <div className="w-px h-full min-h-[40px] bg-zinc-900 mt-4 group-hover:bg-red-900 transition-colors duration-700"></div>
+                  <div className="w-px h-full min-h-10 bg-zinc-900 mt-4 group-hover:bg-red-900 transition-colors duration-700"></div>
                 </div>
 
                 <div className="space-y-8">
@@ -78,7 +78,7 @@ export default function Jokes() {
                             <span className="text-red-600 text-[10px] font-black tracking-widest uppercase italic">
                               Ans:
                             </span>
-                            <div className="h-px flex-grow bg-zinc-900"></div>
+                            <div className="h-px grow bg-zinc-900"></div>
                           </div>
                           <p className="text-red-600 text-lg italic font-light pl-4 border-l-2 border-red-900/30">
                             {j.punchline}

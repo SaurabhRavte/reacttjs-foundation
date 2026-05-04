@@ -34,7 +34,7 @@ export default function Products() {
             </p>
           </div>
 
-          <div className="absolute bottom-0 left-0 w-32 h-[2px] bg-red-600"></div>
+          <div className="absolute bottom-0 left-0 w-32 h-0.5 bg-red-600"></div>
         </header>
 
         {/* Product Grid */}
@@ -91,7 +91,7 @@ export default function Products() {
                   </div>
 
                   {/* Japanese Label Accent */}
-                  <div className="absolute -left-[1px] top-10 transform -rotate-90 origin-left">
+                  <div className="absolute -left-px top-10 transform -rotate-90 origin-left">
                     <span className="text-[7px] text-zinc-800 tracking-[0.5em] uppercase font-bold group-hover:text-red-900 transition-colors">
                       NKO-SYS-{i + 40}
                     </span>
@@ -103,7 +103,7 @@ export default function Products() {
         {/* Footer Accent */}
         <footer className="mt-32 flex justify-center">
           <div className="flex flex-col items-center gap-6">
-            <div className="w-px h-20 bg-gradient-to-b from-zinc-800 to-transparent"></div>
+            <div className="w-px h-20 bg-linear-to-b from-zinc-800 to-transparent"></div>
             <p className="text-[9px] tracking-[0.8em] text-zinc-700 uppercase">
               End of Log // 完了
             </p>

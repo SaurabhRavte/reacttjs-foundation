@@ -1,5 +1,11 @@
+import Cats from "./components/Cats";
+
 const App = () => {
-  return <div className="text-pink-700">App</div>;
+  return (
+    <>
+      <Cats />
+    </>
+  );
 };
 
 export default App;

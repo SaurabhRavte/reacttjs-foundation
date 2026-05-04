@@ -17,19 +17,22 @@ export default function Quotes() {
         {/* Header Section */}
         <header className="relative flex flex-col md:flex-row justify-between items-end mb-24 border-b border-zinc-900 pb-12">
           <div className="flex flex-col">
-            <h1 className="text-red-600 text-[10px] font-bold tracking-[0.6em] mb-3 uppercase">
-              // Jokes
+            <span className="text-red-600 text-[10px] font-bold tracking-[0.6em] mb-3 uppercase">
+              引用 // CITATIONS
+            </span>
+            <h1 className="text-5xl font-extralight tracking-tighter text-zinc-100 uppercase italic">
+              Quotes<span className="text-red-600">.</span>
             </h1>
           </div>
 
           <div className="hidden md:block text-right">
             <p className="text-[9px] leading-relaxed tracking-[0.4em] uppercase text-zinc-600">
-              Protocol: Insight_v4 <br />
+              Protocol: Wisdom_v2 <br />
               Status: Cataloged
             </p>
           </div>
 
-          <div className="absolute bottom-0 left-0 w-32 h-0.5 bg-red-600"></div>
+          <div className="absolute bottom-0 left-0 w-32 h-[2px] bg-red-600"></div>
         </header>
 
         {/* Masonry Content */}
@@ -46,7 +49,7 @@ export default function Quotes() {
                   key={i}
                   className="break-inside-avoid relative group border border-zinc-900 p-10 bg-zinc-950/30 transition-all duration-700 hover:border-red-900/50 hover:bg-zinc-950"
                 >
-                  {/* Decorative Japanese Bracket */}
+                  {/* Decorative Japanese Bracket Accent */}
                   <div className="absolute top-0 left-0 w-4 h-4 border-t border-l border-zinc-800 group-hover:border-red-600 transition-colors duration-500"></div>
 
                   {/* Quote Content */}
@@ -54,19 +57,19 @@ export default function Quotes() {
                     <span className="text-red-900 text-4xl font-serif absolute -top-4 -left-2 opacity-20 group-hover:opacity-40 transition-opacity">
                       "
                     </span>
-                    <p className="text-zinc-200 text-sm leading-relaxed font-light mb-8 tracking-wide">
+                    <p className="text-zinc-200 text-sm leading-relaxed font-light mb-8 tracking-wide italic">
                       {q.content || q.quote}
                     </p>
 
                     <div className="flex items-center gap-4">
-                      <div className="h-px w-4 bg-red-900"></div>
+                      <div className="h-[1px] w-4 bg-red-900"></div>
                       <span className="text-[10px] text-zinc-600 uppercase tracking-[0.3em] font-medium group-hover:text-zinc-300 transition-colors">
                         {q.author || "Origin Unknown"}
                       </span>
                     </div>
                   </div>
 
-                  {/* Subtle ID watermark */}
+                  {/* Subtle Ref ID */}
                   <div className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
                     <span className="text-[8px] font-mono text-zinc-800 tracking-tighter uppercase">
                       Ref_{String(i).padStart(3, "0")}
@@ -76,7 +79,7 @@ export default function Quotes() {
               ))}
         </div>
 
-        {/* Vertical Side Decoration (Hidden on small screens) */}
+        {/* Vertical Side Decoration */}
         <div className="fixed right-6 top-1/2 -translate-y-1/2 hidden xl:flex flex-col items-center gap-8 opacity-20 hover:opacity-100 transition-opacity duration-1000">
           <div className="w-px h-24 bg-zinc-800"></div>
           <span className="[writing-mode:vertical-lr] text-[9px] uppercase tracking-[1em] text-zinc-500">

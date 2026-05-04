@@ -11,6 +11,17 @@ export default function Users() {
       .finally(() => setLoading(false));
   }, []);
 
+  // Derive a stable ID from the user's own data — no Math.random() needed
+  const getUserId = (d) => {
+    const raw = `${d.name?.first}${d.name?.last}${d.location?.city}`;
+    return raw
+      .split("")
+      .reduce((acc, char) => acc + char.charCodeAt(0), 0)
+      .toString(36)
+      .substr(0, 5)
+      .toUpperCase();
+  };
+
   return (
     <div className="min-h-screen bg-[#0a0a0a] text-zinc-400 font-sans selection:bg-red-600 selection:text-white">
       <div className="max-w-7xl mx-auto px-8 py-20">
@@ -84,11 +95,7 @@ export default function Users() {
                       {/* Visual ID Tag */}
                       <div className="pt-4 flex justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                         <span className="text-[8px] px-2 py-0.5 border border-red-900/50 text-red-600 tracking-tighter">
-                          ID-
-                          {Math.random()
-                            .toString(36)
-                            .substr(2, 5)
-                            .toUpperCase()}
+                          ID-{getUserId(d)}
                         </span>
                       </div>
                     </div>
